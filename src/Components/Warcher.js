@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import Comment from './Comment';
 import LiveChat from './LiveChat';
 import { useSelector } from 'react-redux';
+import Videodesc from './Videodesc';
 
 const Warcher = () => {
   const [searchParams]=useSearchParams();
@@ -29,6 +30,7 @@ const Warcher = () => {
       height="360px"
       src={"https://www.youtube.com/embed/"+id} 
       frameborder="0"/>
+      <Videodesc id={id}/>
       <Comment id={id}/>
     </div>
     <LiveChat/>

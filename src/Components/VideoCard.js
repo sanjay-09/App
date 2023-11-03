@@ -8,6 +8,11 @@ const VideoCard = ({data}) => {
     
     
     const {channelTitle,localized,thumbnails}=snippet;
+                        
+  let viewNumber=statistics.viewCount/1000000;
+  let  trimmedNumber = viewNumber.toFixed(2);
+  let viewss=parseFloat(trimmedNumber);
+
     
   return (
     
@@ -19,7 +24,7 @@ const VideoCard = ({data}) => {
       <ul>
         <li className='font-bold'>{snippet.localized.title}</li>
         <li>{channelTitle}</li>
-        <li>{statistics.viewCount/1000000}M Views</li>
+        <li>{viewss}M Views</li>
       </ul>
     </div>
     :
