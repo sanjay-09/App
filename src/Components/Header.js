@@ -9,6 +9,7 @@ import Suggest from './Suggest';
 import {AiOutlineSearch} from "react-icons/ai"
 
 
+
 const Header = () => {
   
 
@@ -59,7 +60,7 @@ const fetchRecommendations=async()=>{
     <div className='grid grid-flow-col m-1 p-2 shadow-md'>
       <div className='w-8 h-8 flex col-span-1'>
         <img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png" alt="sideBarLogo" onClick={()=>{dispatch(attach())}} />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/YouTube_social_white_square_%282017%29.svg" alt="" />
+       <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/YouTube_social_white_square_%282017%29.svg" alt="youtube" onClick={()=>{navigate("/")}}/>
 
 
       </div>
